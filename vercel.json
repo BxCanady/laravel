@@ -1,13 +1,12 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "laravel/remote-jobs-app/api/index.php",
-        "use": "@vercel/php"
-      }
-    ],
-    "routes": [
-      { "src": "/(.*)", "dest": "laravel/remote-jobs-app/api/index.php" }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "laravel/remote-jobs-app/public/index.php",
+      "use": "@vercel/php"
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "laravel/remote-jobs-app/public/index.php" }
+  ]
+}
