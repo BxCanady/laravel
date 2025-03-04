@@ -2,11 +2,11 @@
   "version": 2,
   "builds": [
     {
-      "src": "laravel/remote-jobs-app/public/index.php",
+      "src": "remote-jobs-app/public/index.php",
       "use": "@vercel/php"
     }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "laravel/remote-jobs-app/public/index.php" }
+    { "src": "/(.*)", "dest": "remote-jobs-app/public/index.php" }
   ]
 }
